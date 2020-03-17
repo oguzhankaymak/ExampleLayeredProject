@@ -4968,11 +4968,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\ExampleLayeredProject\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\ExampleLayeredProject\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\ExampleLayeredProject\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\ExampleLayeredProject\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\oguzh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\ExampleLayeredProject\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\ExampleLayeredProject\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\oguzh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4988,11 +4988,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\ExampleLayeredProject\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\ExampleLayeredProject\\Core\\Core.csproj"
+            "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\ExampleLayeredProject\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\ExampleLayeredProject\\Core\\Core.csproj"
             },
-            "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\ExampleLayeredProject\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\ExampleLayeredProject\\Entities\\Entities.csproj"
+            "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\ExampleLayeredProject\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\ExampleLayeredProject\\Entities\\Entities.csproj"
             }
           }
         }

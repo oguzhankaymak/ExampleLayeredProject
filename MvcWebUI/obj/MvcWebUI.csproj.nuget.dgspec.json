@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\ExampleLayeredProject\\MvcWebUI\\MvcWebUI.csproj": {}
+    "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\ExampleLayeredProject\\MvcWebUI\\MvcWebUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\ExampleLayeredProject\\MvcWebUI\\MvcWebUI.csproj": {
+    "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\ExampleLayeredProject\\MvcWebUI\\MvcWebUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\ExampleLayeredProject\\MvcWebUI\\MvcWebUI.csproj",
+        "projectUniqueName": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\ExampleLayeredProject\\MvcWebUI\\MvcWebUI.csproj",
         "projectName": "MvcWebUI",
-        "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\ExampleLayeredProject\\MvcWebUI\\MvcWebUI.csproj",
+        "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\ExampleLayeredProject\\MvcWebUI\\MvcWebUI.csproj",
         "packagesPath": "C:\\Users\\oguzh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\ExampleLayeredProject\\MvcWebUI\\obj\\",
+        "outputPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\ExampleLayeredProject\\MvcWebUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\oguzh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

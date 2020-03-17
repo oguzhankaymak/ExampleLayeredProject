@@ -10,7 +10,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString: "@Server=(localdb)\mssqllocaldb;initial catalog=northwind; integrated security=true");
+            optionsBuilder.UseSqlServer(connectionString: @"Server=(localdb)\mssqllocaldb;initial catalog=northwind; integrated security=true");
         }
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }

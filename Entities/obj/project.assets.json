@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\oguzh\\.nuget\\packages\\": {}
@@ -32,7 +51,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\ExampleLayeredProject\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\ExampleLayeredProject\\Core\\Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

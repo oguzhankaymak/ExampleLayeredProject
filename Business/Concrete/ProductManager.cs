@@ -24,5 +24,10 @@ namespace Business.Concrete
         {
             return _produtDal.GetList(filter: p => p.CategoryId == categoryId);
         }
+
+        public Product GetById(int productId)
+        {
+            return _produtDal.Get(p => p.ProductId == productId);
+        }
     }
 }

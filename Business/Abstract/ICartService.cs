@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Business.Abstract
 {
-    interface ICartService
+    public interface ICartService
     { 
         void AddToCart(Cart cart, Product product);
         void RemoveFormCart(Cart cart, int productId);

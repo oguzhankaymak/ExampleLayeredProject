@@ -43,6 +43,14 @@ namespace MvcWebUI.Controllers
 
         }
 
+        public IActionResult Index()
+        {
+            var model = new CartListViewModel
+            {
+                Cart = _cartSessionHelper.GetCart("cart")
+            };
+            return View(model);
+        }
         
     }
 }

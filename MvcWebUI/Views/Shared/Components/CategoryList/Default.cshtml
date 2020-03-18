@@ -1,0 +1,21 @@
+﻿@model CategoryListViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Category List</h2>
+
+<div class="list-group">
+    <a href="/Product/Index" class="list-group-item">Tüm Ürünler</a>
+    @foreach (var category in Model.Categories)
+    {
+        var css = "list-group-item";
+        if (category.CategoryId == Model.CurrentCategory)
+        {
+            css += " active";
+        }
+        <a href="/Product/Index?category=@category.CategoryId" class="@css" >@category.CategoryName</a>
+    }
+</div>
+    

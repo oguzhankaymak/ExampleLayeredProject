@@ -31,7 +31,15 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            @RenderBody()
+            <div class="row">
+                <div class="col-3">
+                    @await Component.InvokeAsync("CategoryList")
+                </div>
+                <div class="col-9">
+                    @RenderBody()
+                </div>
+            </div>
+            
         </main>
     </div>
 

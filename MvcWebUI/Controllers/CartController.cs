@@ -29,6 +29,7 @@ namespace MvcWebUI.Controllers
             var cart = _cartSessionHelper.GetCart("cart");
             _cartService.AddToCart(cart, product);
             _cartSessionHelper.SetCart("cart",cart);
+            TempData.Add("message", product.ProductName + " sepete eklendi");
             return RedirectToAction("Index", "Product");
 
         }
@@ -39,7 +40,8 @@ namespace MvcWebUI.Controllers
             var cart = _cartSessionHelper.GetCart("cart");
             _cartService.RemoveFormCart(cart,productId);
             _cartSessionHelper.SetCart("cart", cart);
-            return RedirectToAction("Index", "Product");
+            TempData.Add("message", product.ProductName + " sepetten silindi");
+            return RedirectToAction("Index", "Cart");
 
         }
 

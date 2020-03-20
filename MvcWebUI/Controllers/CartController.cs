@@ -4,12 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Business.Abstract;
 using Entities.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MvcWebUI.Helpers;
 using MvcWebUI.Models;
 
 namespace MvcWebUI.Controllers
 {
+    [Authorize]
     public class CartController : Controller
     {
         private ICartService _cartService;

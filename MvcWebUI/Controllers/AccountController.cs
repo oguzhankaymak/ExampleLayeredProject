@@ -32,7 +32,7 @@ namespace MvcWebUI.Controllers
         {
             if (string.IsNullOrWhiteSpace(user.Username) || string.IsNullOrWhiteSpace(user.Password))
             {
-                ViewBag.emptyFields = "Lütfen kullanıcı adı ve şifrenizi boş bırakmayınız.";
+                TempData.Add("message", "Lütfen kullanıcı adı ve şifrenizi boş bırakmayınız.");
                 return View();
             }
 
@@ -52,12 +52,18 @@ namespace MvcWebUI.Controllers
                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
                         new ClaimsPrincipal(claimsIdentity), authProperties);
 
-                    return RedirectToAction("Index", "Product");
+                    return RedirectToAction("Index", "Home");
                 }
             }
 
-            ViewBag.emptyFields = "Lütfen giriş bilgilerinizi kontrol ediniz.";
+            TempData.Add("message","Lütfen giriş bilgilerinizi kontrol ediniz.");
             return View();
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Login", "Account");
         }
 
     }

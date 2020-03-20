@@ -6,6 +6,7 @@ using Business.Abstract;
 using Business.Concrete;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -29,14 +30,22 @@ namespace MvcWebUI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            //add authentication
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
+
             services.AddSingleton<IProductService,ProductManager>();
             services.AddSingleton<IProductDal, EfProductDal>();
             services.AddSingleton<ICategoryService,CategoryManager>();
             services.AddSingleton<ICategoryDal, EfCategoryDal>();
-            services.AddScoped<ICartService, CartManager>(); 
+            services.AddScoped<ICartService, CartManager>();    
             services.AddScoped<ICartSessionHelper, CartSessionHelper>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddSingleton<IUserDal, EfUserDal>();
+            services.AddSingleton<IUserService, UserManager>();
             services.AddSession();
+            services.AddRazorPages().AddRazorRuntimeCompilation();
+          
             services.AddControllersWithViews();
             
         }
@@ -58,7 +67,8 @@ namespace MvcWebUI
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseSession();
             app.UseAuthorization();
 

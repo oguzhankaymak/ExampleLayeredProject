@@ -20,7 +20,7 @@
           "lib/netcoreapp2.1/Microsoft.Bcl.HashCode.dll": {}
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -96,6 +96,22 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Design/3.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.EntityFrameworkCore.Relational": "3.1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
+        },
+        "build": {
+          "build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/3.1.2": {
         "type": "package",
         "dependencies": {
@@ -119,6 +135,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools/3.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "3.1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/3.1.2": {
@@ -1333,10 +1361,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1349,6 +1377,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -1358,7 +1387,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -1486,6 +1515,22 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.Design/3.1.2": {
+      "sha512": "DVbwHFZVWp37ti2uAqzSnfLqqvI1TjxLy8xOYm5jAyFLr/9OiGGyJHdtrMr3n62SG28eV3CeD+N4YwedyVhKSQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.design/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/net461/Microsoft.EntityFrameworkCore.Design.props",
+        "build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props",
+        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll",
+        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.xml",
+        "microsoft.entityframeworkcore.design.3.1.2.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
     "Microsoft.EntityFrameworkCore.Relational/3.1.2": {
       "sha512": "7CKgFCLzsw7Lms3jxnhv2m5Wc1VmrR7E50tvGRxIT7aXMm4CoOIiG5YlRfAecSC2BlgJu2+oa2Mwd+zOJo0Qkg==",
       "type": "package",
@@ -1512,6 +1557,30 @@
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
         "microsoft.entityframeworkcore.sqlserver.3.1.2.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Tools/3.1.2": {
+      "sha512": "EEupVMDIHqS2b81nYebaMNDHD9iKU4eKrGtG6j+7D5NF/EsTYLPgypguX1Jv3HwdOesysKD/xYaGrUUCJLHIgQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.tools/3.1.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.0/_._",
+        "microsoft.entityframeworkcore.tools.3.1.2.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.nuspec",
+        "tools/EntityFrameworkCore.PS2.psd1",
+        "tools/EntityFrameworkCore.PS2.psm1",
+        "tools/EntityFrameworkCore.psd1",
+        "tools/EntityFrameworkCore.psm1",
+        "tools/about_EntityFrameworkCore.help.txt",
+        "tools/init.ps1",
+        "tools/net461/any/ef.exe",
+        "tools/net461/win-x86/ef.exe",
+        "tools/netcoreapp2.0/any/ef.dll",
+        "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/3.1.2": {
@@ -4959,7 +5028,9 @@
     ".NETCoreApp,Version=v3.1": [
       "Core >= 1.0.0",
       "Entities >= 1.0.0",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.2"
+      "Microsoft.EntityFrameworkCore.Design >= 3.1.2",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.2",
+      "Microsoft.EntityFrameworkCore.Tools >= 3.1.2"
     ]
   },
   "packageFolders": {
@@ -4968,11 +5039,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\oguzh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\oguzh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4988,11 +5059,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Core\\Core.csproj"
+            "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\Core\\Core.csproj"
             },
-            "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Entities\\Entities.csproj"
+            "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\Entities\\Entities.csproj"
             }
           }
         }
@@ -5006,7 +5077,19 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.1.2, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[3.1.2, )"
+          },
+          "Microsoft.EntityFrameworkCore.Tools": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[3.1.2, )"
           }

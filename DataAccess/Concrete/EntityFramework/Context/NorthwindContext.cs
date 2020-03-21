@@ -10,7 +10,12 @@ namespace DataAccess.Concrete.EntityFramework.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString: @"Server=(localdb)\mssqllocaldb;initial catalog=northwind; integrated security=true");
+            optionsBuilder.UseSqlServer(connectionString: @"Server=(localdb)\mssqllocaldb;initial catalog=MyDb; integrated security=true");
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Seed();
         }
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }

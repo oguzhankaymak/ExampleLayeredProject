@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Entities\\Entities.csproj": {}
+    "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Core\\Core.csproj": {
+    "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\oguzh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Core\\obj\\",
+        "outputPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\oguzh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Entities\\Entities.csproj": {
+    "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\oguzh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\oguzh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -85,8 +85,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Core\\Core.csproj"
+              "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder\\ExampleLayeredProject\\Core\\Core.csproj"
               }
             }
           }

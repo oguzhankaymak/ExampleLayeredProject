@@ -8406,11 +8406,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\MvcWebUI\\MvcWebUI.csproj",
+      "projectUniqueName": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder (2)\\ExampleLayeredProject\\MvcWebUI\\MvcWebUI.csproj",
       "projectName": "MvcWebUI",
-      "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\MvcWebUI\\MvcWebUI.csproj",
+      "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder (2)\\ExampleLayeredProject\\MvcWebUI\\MvcWebUI.csproj",
       "packagesPath": "C:\\Users\\oguzh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\MvcWebUI\\obj\\",
+      "outputPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder (2)\\ExampleLayeredProject\\MvcWebUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\oguzh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8426,8 +8426,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Business\\Business.csproj"
+            "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder (2)\\ExampleLayeredProject\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder (2)\\ExampleLayeredProject\\Business\\Business.csproj"
             }
           }
         }

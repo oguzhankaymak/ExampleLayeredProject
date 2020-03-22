@@ -2,7 +2,7 @@
 
 namespace DataAccess.Migrations
 {
-    public partial class SeedDatasTable : Migration
+    public partial class SeedUsersTable : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

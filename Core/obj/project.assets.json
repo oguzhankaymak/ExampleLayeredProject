@@ -4930,11 +4930,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder (2)\\ExampleLayeredProject\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder (2)\\ExampleLayeredProject\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\oguzh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\ExampleLayeredProject\\Core\\obj\\",
+      "outputPath": "C:\\Users\\oguzh\\OneDrive\\Masaüstü\\Projects\\New folder (2)\\ExampleLayeredProject\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\oguzh\\AppData\\Roaming\\NuGet\\NuGet.Config",

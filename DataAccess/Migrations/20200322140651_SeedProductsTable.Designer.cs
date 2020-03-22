@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(NorthwindContext))]
-    [Migration("20200321113755_SeedDatasTable")]
-    partial class SeedDatasTable
+    [Migration("20200322140651_SeedProductsTable")]
+    partial class SeedProductsTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -192,14 +192,6 @@ namespace DataAccess.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = 1,
-                            Password = "123",
-                            Username = "oguzhankaymak"
-                        });
                 });
 #pragma warning restore 612, 618
         }

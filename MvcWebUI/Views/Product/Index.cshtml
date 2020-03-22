@@ -5,7 +5,19 @@
 }
 
 <h2>Ürün Listesi</h2>
+
+
+
 <table class="table table-responsive">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Price Stock</th>
+        </tr>
+    </thead>
     @foreach (var product in Model.Products)
     {
         <tr>
@@ -14,7 +26,7 @@
             <td>@product.QuantityPerUnit</td>
             <td>@product.UnitPrice</td>
             <td>@product.UnitsInStock</td>
-            <td><a class="btn btn-sm btn-success" asp-controller="Cart"asp-action="AddToCart" asp-route-productId="@product.ProductId">Sepete Ekle</a></td>
+            <td><a class="btn btn-sm btn-success" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@product.ProductId">Sepete Ekle</a></td>
         </tr>
     }
 </table>

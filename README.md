@@ -3,6 +3,12 @@
 Asp.Net Core bilgilerimi pekiştirmek ve katmanlı mimari yapısını öğrenmek amacıyla oluşturduğum örnek proje.
 
 
+
+
+
+Kurulum : Package Manager Consol içerisinde "Default Project" olarak "DataAccess" seçip Update-Database yapmanız gerekmektedir.
+
+
 *  ### Entities Katmanı ###
 Projedeki veritabanına karşılık gelen nesneleri yapılandırdığımız katmandır. Dto(Data Transfer Object) adını verdiğimiz yapıları burada tutabiliriz.
 

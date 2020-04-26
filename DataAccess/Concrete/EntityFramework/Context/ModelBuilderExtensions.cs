@@ -1,8 +1,5 @@
 ﻿using Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DataAccess.Concrete.EntityFramework.Context
 {
@@ -13,25 +10,25 @@ namespace DataAccess.Concrete.EntityFramework.Context
             modelBuilder.Entity<Category>().HasData(
                 new Category
                 {
-                    CategoryId = 1,
+                    Id = 1,
                     CategoryName = "Elektronik"
 
                 },
                 new Category
                 {
-                    CategoryId = 2,
+                    Id = 2,
                     CategoryName = "Süt Ürünleri"
 
                 },
                 new Category
                 {
-                    CategoryId = 3,
+                    Id = 3,
                     CategoryName = "İçecekler"
 
                 },
                 new Category
                 {
-                    CategoryId = 4,
+                    Id = 4,
                     CategoryName = "Unlu Mamüller"
 
                 });
@@ -39,7 +36,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
             modelBuilder.Entity<Product>().HasData(
                 new Product
                 {
-                    ProductId = 1,
+                    Id = 1,
                     ProductName = "Dell Bilgisayar",
                     UnitPrice = 4500,
                     UnitsInStock = 100,
@@ -49,7 +46,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
                 },
                 new Product
                 {
-                    ProductId = 2,
+                    Id = 2,
                     ProductName = "Casper Bilgisayar",
                     UnitPrice = 2000,
                     UnitsInStock = 100,
@@ -59,7 +56,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
                 },
                 new Product
                {
-                   ProductId = 3,
+                   Id = 3,
                    ProductName = "Huaweı Akıllı Telefon",
                    UnitPrice = 2200,
                    UnitsInStock = 100,
@@ -69,7 +66,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
                },
                 new Product
                 {
-                    ProductId = 4,
+                    Id = 4,
                     ProductName = "Sütaş Yoğurt",
                     UnitPrice = 10,
                     UnitsInStock = 10000,
@@ -79,7 +76,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
                 },
                 new Product
                {
-                   ProductId = 5,
+                   Id = 5,
                    ProductName = "Fanta",
                    UnitPrice = 5,
                    UnitsInStock = 10000,
@@ -89,7 +86,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
                },
                 new Product
               {
-                  ProductId = 6,
+                  Id = 6,
                   ProductName = "Coca Cola",
                   UnitPrice = 5,
                   UnitsInStock = 10000,
@@ -99,7 +96,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
               },
                 new Product
               {
-                  ProductId = 7,
+                  Id = 7,
                   ProductName = "Poğaça",
                   UnitPrice = 2,
                   UnitsInStock = 10000,
@@ -109,7 +106,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
               },
                 new Product
                 {
-                    ProductId = 8,
+                    Id = 8,
                     ProductName = "Simit",
                     UnitPrice = 2,
                     UnitsInStock = 10000,
@@ -119,7 +116,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
                 },
                 new Product
                 {
-                    ProductId = 9,
+                    Id = 9,
                     ProductName = "Kıymalı Pide",
                     UnitPrice = 12,
                     UnitsInStock = 10000,
@@ -129,7 +126,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
                 },
                 new Product
                 {
-                    ProductId = 10,
+                    Id = 10,
                     ProductName = "Kurabiye",
                     UnitPrice = 18,
                     UnitsInStock = 10000,
@@ -141,15 +138,11 @@ namespace DataAccess.Concrete.EntityFramework.Context
             modelBuilder.Entity<User>().HasData(
                 new User
                 {
-                    UserId = 1,
+                    Id = 1,
                     Username = "oguzhankaymak",
                     Password = "123"
 
                 });
-                
-
-
-
         }
     }
 }

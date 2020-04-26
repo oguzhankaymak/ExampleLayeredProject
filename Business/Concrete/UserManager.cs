@@ -1,15 +1,12 @@
 ﻿using Business.Abstract;
 using DataAccess.Abstract;
 using Entities.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Business.Concrete
 {
     public class UserManager : IUserService
     {
-        private IUserDal _userDal;
+        private readonly IUserDal _userDal;
         public UserManager(IUserDal userDal)
         {
             _userDal = userDal;
@@ -21,7 +18,7 @@ namespace Business.Concrete
 
         public bool IsUserControl(string username, string password)
         {
-            return _userDal.Get(filter: u => u.Username == username && u.Password == password) != null ? true : false;
+            return _userDal.Get(filter: u => u.Username == username && u.Password == password) != null;
         }
     }
 }

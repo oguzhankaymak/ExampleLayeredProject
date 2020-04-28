@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Core.Entities.Abstract
 {
-    public interface IEntity
+    public abstract class BaseEntity<T>
     {
+        [Key]
+        public T Id { get; set; }
     }
 }

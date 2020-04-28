@@ -1,33 +1,31 @@
 ﻿using Business.Abstract;
 using DataAccess.Abstract;
 using Entities.Concrete;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Business.Concrete
 {
     public class ProductManager : IProductService
     {
-        private IProductDal _produtDal;
+        private readonly IProductDal _productDal;
 
         public ProductManager(IProductDal productDal)
         {
-            _produtDal = productDal;
+            _productDal = productDal;
         }
         public List<Product> GetAll()
         {
-            return _produtDal.GetList();
+            return _productDal.GetList();
         }
 
         public List<Product> GetByCategory(int categoryId)
         {
-            return _produtDal.GetList(filter: p => p.CategoryId == categoryId);
+            return _productDal.GetList(filter: product => product.CategoryId == categoryId);
         }
 
         public Product GetById(int productId)
         {
-            return _produtDal.Get(p => p.ProductId == productId);
+            return _productDal.Get(product => product.Id == productId);
         }
     }
 }

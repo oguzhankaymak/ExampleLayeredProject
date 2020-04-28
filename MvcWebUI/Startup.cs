@@ -1,20 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Business.Abstract;
-using Business.Concrete;
-using DataAccess.Abstract;
-using DataAccess.Concrete.EntityFramework;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MvcWebUI.Helpers;
+using MvcWebUI.Extensions;
 
 namespace MvcWebUI
 {
@@ -34,15 +26,12 @@ namespace MvcWebUI
             //add authentication
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(config=>config.LoginPath = "/Account/Login");
 
-            services.AddSingleton<IProductService,ProductManager>();
-            services.AddSingleton<IProductDal, EfProductDal>();
-            services.AddSingleton<ICategoryService,CategoryManager>();
-            services.AddSingleton<ICategoryDal, EfCategoryDal>();
-            services.AddScoped<ICartService, CartManager>();    
             services.AddScoped<ICartSessionHelper, CartSessionHelper>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddSingleton<IUserDal, EfUserDal>();
-            services.AddSingleton<IUserService, UserManager>();
+
+            services.AddDataAccessLayers();
+            services.AddManagers();
+            
             services.AddSession();
             services.AddRazorPages().AddRazorRuntimeCompilation();
           
